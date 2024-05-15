@@ -151,6 +151,7 @@
     div.classList.add("message");
     div.textContent = message;
     chat_container.appendChild(div);
+    scrollToBottom()
   }
   
   function displayNewMessage(message) {
@@ -158,6 +159,7 @@
     div.classList.add("message-new");
     div.textContent = message;
     chat_container.appendChild(div);
+    scrollToBottom()
   }
   
   join_button.addEventListener("click", () => {
@@ -170,3 +172,6 @@
     });
   });
   
+  function scrollToBottom() {
+    chat_container.scrollTop = chat_container.scrollHeight;
+  }
