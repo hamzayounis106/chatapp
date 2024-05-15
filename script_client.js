@@ -23,7 +23,7 @@
 
   // Check if the current environment is production (deployed on Vercel)
   if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
-      serverUrl = "https://chaty-fccdnuu4p-hamzayounis106s-projects.vercel.app";
+      serverUrl = "https://simplechatapplication-fb3280d5691f.herokuapp.com/";
   }
   
   const server = io(serverUrl);
