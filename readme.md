@@ -61,9 +61,16 @@ Here is an overview of the project's structure:
 
 ```
 .
-├── app.js              # Main server file
-├── package.json        # Project metadata and dependencies
-└── README.md           # Project documentation
+.
+├── .gitignore            # Specifies files and directories that should be ignored by Git.
+├── app.js                # Main server-side script responsible for configuring and running the Node.js server with Express and Socket.IO.
+├── index.html            # Main HTML file for the client-side of the chat application. Contains the structure and layout of the chat interface.
+├── package-lock.json     # Automatically generated file that ensures the exact versions of installed dependencies. Used for package management.
+├── package.json          # Contains metadata about the project, such as name, version, description, and dependencies.
+├── procfile              # Used by Heroku to determine what commands are run by your application's dynos. It specifies the commands to start the server.
+├── readme.md             # README file containing the documentation for your project. Provides information on how to set up and use the application.
+└── script_client.js      # Main client-side JavaScript file responsible for handling chat functionalities using Socket.IO. Handles sending and receiving messages.
+
 ```
 
 ## Usage
