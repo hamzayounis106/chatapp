@@ -1,6 +1,7 @@
-const io = require("socket.io")(8080, {
+const PORT = process.env.PORT || 8080;
+const io = require("socket.io")(PORT, {
   cors: {
-    origin: ["http://127.0.0.1:5500"],
+    origin: ["http://127.0.0.1:5500" , "https://hamzayounis106.github.io/chatapp/"],
     credentials: true,
   },
 });
@@ -25,8 +26,8 @@ io.on("error", (err) => console.log("Socket.IO error:", err));
 httpServer.on("error", (err) => console.log("HTTP server error:", err));
 
 // Start HTTP server
-const port = 3000;
-httpServer.listen(port, () => {
+
+httpServer.listen(PORT, () => {
   console.log(`HTTP server is running on port ${port}`);
 });
 
