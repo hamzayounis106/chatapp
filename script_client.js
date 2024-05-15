@@ -21,7 +21,7 @@
   });
   let serverUrl = "http://localhost:8080"; // Default to localhost for development
 
-  // Check if the current environment is production (deployed on Vercel)
+  // Check if the current environment is production 
   if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
       serverUrl = "https://simplechatapplication-fb3280d5691f.herokuapp.com/";
   }
