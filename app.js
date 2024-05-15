@@ -1,7 +1,7 @@
 const PORT = process.env.PORT || 8080;
 const io = require("socket.io")(PORT, {
   cors: {
-    origin: ["http://127.0.0.1:5500" , "https://hamzayounis106.github.io/chatapp/"],
+    origin: ["http://127.0.0.1:5500" , "https://hamzayounis106.github.io/chatapp/", "https://simplechatapplication-fb3280d5691f.herokuapp.com/"],
     credentials: true,
   },
 });
